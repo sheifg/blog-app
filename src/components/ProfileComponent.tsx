@@ -2,6 +2,7 @@ import { object, string } from "yup";
 import FormComponent from "../components/FormComponent";
 import { useAuth } from "../context/AuthContext";
 import { FormikHelpers } from "formik";
+import { IUser } from "../types";
 
 const ProfileComponent = () => {
   // Safely retrieve and parse the user object from localStorage

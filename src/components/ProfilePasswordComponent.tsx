@@ -2,6 +2,7 @@ import { object, ref, string } from "yup";
 import FormComponent from "../components/FormComponent";
 import { useAuth } from "../context/AuthContext";
 import { FormikHelpers } from "formik";
+import { IUser } from "../types";
 
 // Contains everything about password, necessary for the form
 interface IPassword {

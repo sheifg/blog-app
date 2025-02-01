@@ -1,7 +1,5 @@
 //! Auth Type Definitions
 
-import { LuFolderMinus } from "react-icons/lu";
-
 // Using an interface, it can de added I and then the name: IUser
 interface IUser {
   // That info comes from postman, from the response of login a user

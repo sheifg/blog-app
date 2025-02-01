@@ -8,6 +8,7 @@ import ClassicEditor from "@ckeditor/ckeditor5-build-classic";
 import { FormikHelpers } from "formik";
 import { useEffect, useState } from "react";
 import InputComponent from "../components/InputComponent";
+import { IBlogForm } from "../types";
 
 const AddOrEditBlog = () => {
   const navigate = useNavigate();
@@ -54,8 +55,6 @@ const AddOrEditBlog = () => {
     }
   }, [state, getCategories]); // Runs on component mount or when state changes
 
-  console.log(state);
-  console.log("CATEGORIES", categories);
   // Initial values comes from the state, and maybe it is need some time to have it, not come inmediately
   const initialValues = blog;
 

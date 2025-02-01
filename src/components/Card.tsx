@@ -5,6 +5,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
 import { useAuth } from "../context/AuthContext";
 import { useBlogContext } from "../context/BlogContext";
+import { IBlog, ISingleBlog } from "../types";
 
 interface CardProps {
   // It can single blog or blog
