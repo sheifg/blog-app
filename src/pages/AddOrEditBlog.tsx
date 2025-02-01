@@ -8,7 +8,7 @@ import ClassicEditor from "@ckeditor/ckeditor5-build-classic";
 import { FormikHelpers } from "formik";
 import { useEffect, useState } from "react";
 import InputComponent from "../components/InputComponent";
-import { IBlogForm } from "../types";
+import { IBlogForm } from "../types/types";
 
 const AddOrEditBlog = () => {
   const navigate = useNavigate();

@@ -21,6 +21,7 @@ interface IFormComponentProps<T> {
   ) => void | Promise<void>;
   initialValues: T;
   // <any> is not a good thing, but sometimes it is had to use, like here, becasue it covers any cases posibles in validation squema
+  // @ts-ignore:next-line
   ValidationSchema: Yup.ObjectSchema<any>;
   title: string;
   // IInput defined above

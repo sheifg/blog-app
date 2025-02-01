@@ -19,7 +19,7 @@ import {
   IPaginationData,
   ISingleBlog,
   ISingleBlogResponse,
-} from "../types";
+} from "../types/types";
 
 // Define interfaces for posts and comments
 

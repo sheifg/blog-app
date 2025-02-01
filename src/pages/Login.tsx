@@ -24,6 +24,7 @@ export default function Login() {
 
   // handleSubmit in Formik
   // https://formik.org/docs/api/formik
+  // @ts-ignore:next-line
   const handleSubmit = (values, actions) => {
     console.log(values);
     login(values, navigate);

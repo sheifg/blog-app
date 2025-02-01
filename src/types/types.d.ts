@@ -1,7 +1,7 @@
 //! Auth Type Definitions
 
 // Using an interface, it can de added I and then the name: IUser
-interface IUser {
+export interface IUser {
   // That info comes from postman, from the response of login a user
   // https://39222.fullstack.clarusway.com/auth/login
   username: string;
@@ -13,12 +13,12 @@ interface IUser {
   password?: string;
 }
 
-interface ICurrentUser extends IUser {
+export interface ICurrentUser extends IUser {
   token: string;
 }
 
 //! Blog Type Definitions
-interface IBlog {
+export interface IBlog {
   _id: string;
   userId: string;
   categoryId: string;
@@ -33,7 +33,7 @@ interface IBlog {
   updatedAt: string;
 }
 
-interface IBlogForm {
+export interface IBlogForm {
   categoryId: string;
   title: string;
   content: string;
@@ -60,7 +60,7 @@ interface IBlogForm {
 // https://39222.fullstack.clarusway.com/blogs?limit=10&page=2 just show me the page 2
 
 // Getting it in postman for all blogs
-interface IBlogs {
+export interface IBlogs {
   error: string;
   data: IBlog[];
   details: {
@@ -73,24 +73,24 @@ interface IBlogs {
 }
 
 // Getting it in postmn for a single blog, the followings:
-interface IBlogUser {
+export interface IBlogUser {
   _id: string;
   username: string;
   firstName: string;
   lastName: string;
 }
 
-interface IBlogCategory {
+export interface IBlogCategory {
   _id: string;
   name: string;
 }
 
 // Response type from api
-interface IBlogCategoryResponse {
+export interface IBlogCategoryResponse {
   data: IBlogCategory[];
 }
 
-interface IBlogComment {
+export interface IBlogComment {
   _id: string;
   blogId: string;
   userId: IBlogUser;

@@ -69,6 +69,7 @@ export default function Register() {
   const { register } = useAuth();
   const navigate = useNavigate();
 
+  // @ts-ignore:next-line
   const handleSubmit = (values, actions) => {
     register(values, navigate);
     actions.setSubmitting(false);

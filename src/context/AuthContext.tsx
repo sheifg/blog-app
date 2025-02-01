@@ -3,7 +3,7 @@ import { createContext, useEffect, useState, ReactNode } from "react";
 import { useContext } from "react";
 import { toast } from "react-toastify";
 import { BASE_URL } from "../constants";
-import { ICurrentUser, IUser } from "../types";
+import { ICurrentUser, IUser } from "../types/types";
 
 interface IAuthContext {
   register: (
@@ -57,6 +57,7 @@ export const AuthProvider = ({ children }: IAuthProviderProps) => {
       setUserInfo(JSON.parse(storedUser)); // Restore userInfo from localStorage if available
     }
     // Alternatively, perform an async token validation with the server here
+    
   }, []);
 
   // function checkAuth() {
